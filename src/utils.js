@@ -6,8 +6,11 @@
 function filterObject(source, keys) {
   const newObject = {};
 
-  keys.forEach((obj) => {
-    newObject[obj] = source[obj];
+  keys.forEach((key) => {
+    const value = source[key];
+    if(value && value !== 'undefined') {
+      newObject[key] = value;
+    }
   });
 
   return newObject;
