@@ -4,11 +4,14 @@
  */
 
 function filterObject(source, keys) {
+  // eslint-disable-next-line
+  console.log(source, keys);
   const newObject = {};
 
   keys.forEach((key) => {
     const value = source[key];
-    if(value && value !== 'undefined') {
+
+    if (typeof value !== 'undefined' && value) {
       newObject[key] = value;
     }
   });
