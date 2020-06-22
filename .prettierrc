@@ -4,7 +4,7 @@
   "useTabs": false,
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
-  "arrowParens": always,
+  "arrowParens": "always",
   "printWidth": 180,
   "trailingComma": "none"
 }
